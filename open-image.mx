@@ -14,6 +14,8 @@ openagent set image {
             case { $KITTY_WINDOW_ID }      { set mode=kitty }
             case { = TERM==`xterm-kitty` } { set mode=kitty }
             case { $TERMINOLOGY }          { set mode=terminology }
+            case { = TERM_PROGRAM==`iTerm.app` } { set mode=iterm }
+            case { $ITERM_PROFILE }        { set mode=iterm }
             catch                          { set mode=compatible }
         }
     }
@@ -39,7 +41,8 @@ openagent set image {
         }
 
         case iterm {
-            err "Not currently supported."
+            #out "{ESC}]1337;File=$file{^G}"
+            out "$file"
         }
 
         case terminology {
