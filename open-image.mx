@@ -6,7 +6,7 @@ config define open image {
 }
 
 openagent set image {
-    params -> [ 1 ] -> set file
+    $ARGS[1] -> set file
     config get open image -> set mode
 
     if { = mode==`auto` } {

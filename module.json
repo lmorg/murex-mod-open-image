@@ -2,20 +2,20 @@
 	{
 		"Name": "open-image",
 		"Summary": "Open handler for images to render in the terminal",
-		"Version": "1.0",
+		"Version": "1.1",
 		"Source": "open-image.mx",
-        "Dependencies": {
-            "Optional": [
-                "kitty",
-                "terminology",
-                "tycat",
-                "xterm",
-                "img2sixel"
-            ],
-            "Required": [],
-            "Platform": [
-                "any"
-            ]
-        }
+		"Dependencies": {
+			"Optional": [
+				"kitty",
+				"terminology",
+				"tycat",
+				"xterm",
+				"img2sixel"
+			],
+			"Required": [],
+			"Platform": [
+				"any"
+			]
+		}
 	}
 ]
