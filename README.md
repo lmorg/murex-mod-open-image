@@ -1,5 +1,8 @@
 # Murex module: open-image
 
+> Please note this functionality has been merged into _murex_ and thus you
+> no longer require this module.
+
 This _murex_ module creates a data type for images (`image`) and creates an
 open handler which renders those images in the terminal.
 
